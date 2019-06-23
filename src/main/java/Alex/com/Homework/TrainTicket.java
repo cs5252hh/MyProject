@@ -15,10 +15,10 @@ public class TrainTicket {
 
 
     public double getamount(){
-        int oneway=number-roundtrip;
-        double onewayprice=1000;
-        double roundtripprice=2000*0.9;
-        double sum=(oneway*onewayprice)+(roundtrip*roundtripprice);
+        int total=number-roundtrip;
+        double onewayprice= 1000;
+        double roundtripprice= 2000*0.9;
+        double sum=(total * onewayprice)+(roundtrip * roundtripprice);
         return sum;
 
     }
