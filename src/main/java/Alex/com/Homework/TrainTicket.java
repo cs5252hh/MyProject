@@ -6,16 +6,12 @@ public class TrainTicket {
     int roundtrip;
 
 
-
-
-
     public TrainTicket(String name,int number,int roundtrip){
         this.name=name;
         this.number=number;
         this.roundtrip=roundtrip;
 
     }
-
 
 
     public double getamount(){

@@ -20,12 +20,6 @@ public class Train {
         System.out.println("總金額為："+train1.getamount());
 
 
-
-
-
-
-
-
     }
 
 
