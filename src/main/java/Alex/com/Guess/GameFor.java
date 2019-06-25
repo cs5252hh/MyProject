@@ -27,9 +27,8 @@ public class GameFor {
         Scanner scanner= new Scanner(System.in);
         int secret= new Random().nextInt(10)+1;
         for (int i=1; i<=4;i++){
-        System.out.println("Please enter a number(" + i +"/4):");
-        int number=0;
-
+            System.out.println("Please enter a number(" + i +"/4):");
+            int number=0;
             number=scanner.nextInt();
             System.out.println("第"+ i + "次" +"猜: " + number);
                 if (number > secret) {

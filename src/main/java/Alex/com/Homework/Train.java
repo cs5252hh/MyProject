@@ -6,7 +6,7 @@ public class Train {
     public static void main(String[] args) {
         int number= 0;
         while (true) {
-            System.out.println("乘客您好");
+            System.out.println("親愛的乘客您好");
             Scanner scanner = new Scanner(System.in);
             System.out.println("請輸入姓名：");
             String name = scanner.next();
