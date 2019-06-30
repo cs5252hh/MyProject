@@ -8,3 +8,6 @@ public class NumberGame {
     int numbercounts = 0;
 
 }
+
+
+// Abstract Class未實作的方法

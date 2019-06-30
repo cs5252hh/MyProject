@@ -1,5 +1,8 @@
 package Alex.com.Student;
 
+
+
+
 public class GraduateStudent extends Student {
     int thesis;
     static  int pass=70;
