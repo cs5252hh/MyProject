@@ -5,9 +5,14 @@ import java.util.Scanner;
 public class SchoolRunner {
     public static void main(String[] args) {
         //UserInput();
+        Student.pass=70;
         Student stu=new Student("Alex",90,100);
         stu.print();
         System.out.println("High score:"+ stu.heighestscore());
+
+        GraduateStudent gstu= new GraduateStudent("Jack",40,40,50);
+        gstu.print();
+
 
 
     }

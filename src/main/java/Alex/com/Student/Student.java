@@ -5,6 +5,7 @@ public class Student {
     String name; //定義name欄位屬性為字串
     int englishscore;
     int mathscore;
+    static int pass;
 
 
 
@@ -35,7 +36,7 @@ public class Student {
         int average=getAverage();
         System.out.print(name+"\t"+ englishscore+ "\t"+mathscore
         +"\t" + getAverage()
-        +"\t" + ((getAverage()>=60)? "PASS":"FAILED")
+        +"\t" + ((getAverage()>=pass)? "PASS":"FAILED")
         );
         // \t=TAB
 
