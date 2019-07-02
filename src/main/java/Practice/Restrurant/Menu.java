@@ -1,35 +1,63 @@
 package Practice.Restrurant;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
-import java.util.Scanner;
 
 public class Menu {
-    public static void main(String[] args) {
+
+    List<String> salad;
+    List<String> meal;
+    List<String> drink;
 
 
-        Scanner scanner = new Scanner(System.in);
-        Order order = new Order(null,null,null);
-        System.out.println("Welcome !");
-        System.out.println("Here are salad:");
-        System.out.println(order.setSalad());
-        System.out.println("Please enter number to order salad:");
-        int saladinput = scanner.nextInt()-1;
-        String selfsalad= (order.setSalad().get(saladinput));
+    public  Menu(Collection<String> salad,Collection<String> meal,Collection<String> drink){
+        this.salad=setSalad();
+        this.salad=setMeal();
+        this.salad=setDrink();
 
-        System.out.println("Here are meal:");
-        System.out.println(order.setMeal());
-        System.out.println("Please enter number to order meal:");
-        int mealinput = scanner.nextInt()-1;
-        String selfmeal= (order.setMeal().get(mealinput));
-
-        System.out.println("Here are drink:");
-        System.out.println(order.setDrink());
-        System.out.println("Please enter number to order drink:");
-        int drinkinput = scanner.nextInt()-1;
-        String selfdrink= (order.setDrink().get(drinkinput));
-
-        System.out.print("Your order are:"+ "\t" + selfsalad+ "\t"+ selfmeal
-                + "\t" + selfdrink);
     }
+
+    public List<String> setSalad() {
+
+
+        List<String> saladlist
+                = new ArrayList<>();
+        saladlist.add("salad1");
+        saladlist.add("salad2");
+
+        return saladlist;
+
+    }
+
+
+    public List<String> setMeal() {
+
+
+        List<String> meallist
+                = new ArrayList<>();
+        meallist.add("meal1");
+        meallist.add("meal2");
+
+        return meallist;
+
+    }
+
+    public List<String> setDrink() {
+
+
+        List<String> drinklist
+                = new ArrayList<>();
+        drinklist.add("drink1");
+        drinklist.add("drink2");
+
+        return drinklist;
+
+    }
+
+
+
 }
+
+
+
